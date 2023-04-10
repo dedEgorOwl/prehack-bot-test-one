@@ -18,7 +18,7 @@ function App() {
 	
   return (
     <div className="App">
-		<Input size='large' placeholder='Company name' className='inpTest'/>
+		<Input color={themeParams.button_color} size='large' placeholder='Company name' className='inpTest'/>
     </div>
   )
 }
