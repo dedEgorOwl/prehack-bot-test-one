@@ -4,6 +4,7 @@ import './App.scss'
 
 const tg = window.Telegram.WebApp;
 const themeParams = tg.themeParams;
+const colorScheme = tg.colorScheme;
 
 function App() {
 
