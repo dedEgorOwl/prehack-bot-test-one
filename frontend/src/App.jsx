@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Input } from 'antd';
 import './App.scss'
 
 const tg = window.Telegram.WebApp;
@@ -17,7 +18,7 @@ function App() {
 	
   return (
     <div className="App">
-		
+		<Input placeholder='Company name' />
     </div>
   )
 }
