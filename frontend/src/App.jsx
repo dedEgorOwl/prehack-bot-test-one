@@ -18,7 +18,7 @@ function App() {
 	
   return (
     <div className="App">
-		<Input style={{outline: themeParams.button_text_color}} size='large' placeholder='Company name' className='inpTest'/>
+		<Input  size='large' placeholder='Company name' className='inpTest'/>
     </div>
   )
 }
