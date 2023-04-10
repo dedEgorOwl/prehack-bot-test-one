@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import './App.scss'
-import { MainButton, BackButton } from '@vkruglikov/react-telegram-web-app';
+import { MainButton, ThemeParams } from '@vkruglikov/react-telegram-web-app';
 
 const tg = window.Telegram.WebApp;
 
@@ -8,14 +8,18 @@ const tg = window.Telegram.WebApp;
 
 function App() {
 
+	let prms;
+
 	useEffect(() => {
+		prms = ThemeParams();
 		tg.ready();
 	}, []);
 
+	
   return (
     <div className="App">
 		
-		<BackButton text='qwe'></BackButton>
+		
 		<MainButton text='Оформить заказ'></MainButton>
     </div>
   )
