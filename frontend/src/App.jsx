@@ -18,7 +18,7 @@ function App() {
 
   return (
 	<div className="App">
-		<TextField required id="outlined-required" label="Required" defaultValue="Hello World"/>
+		<TextField id="outlined-search" label="Search field" type="search" />
 	</div>
   )
 }
