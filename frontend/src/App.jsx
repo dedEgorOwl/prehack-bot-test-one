@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Input, ConfigProvider } from 'antd';
+import { Input, ConfigProvider, theme } from 'antd';
 import './App.scss'
 
 const tg = window.Telegram.WebApp;
