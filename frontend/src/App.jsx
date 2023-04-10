@@ -34,9 +34,8 @@ function App() {
         }
       >
 		<div className="App">
-			<Title level={3}>Введите данные компании</Title>
-			<Input addonBefore="Название" size="large" placeholder="Введите название" className='inpTest'/>
-			<Input addonBefore="Слоган" size="large" placeholder="Введите слоган" className='inpTest'/>
+			<Input size="large" placeholder="Введите название" className='inpTest'/>
+			<Input size="large" placeholder="Введите слоган" className='inpTest'/>
 			<TextArea addonBefore="Описание" rows={6} placeholder="Введите описание" maxLength={256} className='inpTest'/>
 		</div>
 	  </ConfigProvider>

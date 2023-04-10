@@ -26,5 +26,6 @@ bot.setMyCommands([
 	{command: '/start', description: 'Открыть магазин'},
 	{command: '/info', description: 'Информация о создателе'},
 	{command: '/rate', description: 'Оценка'},
+	{command: '/mycomp', description: 'Моя компания'}
 ]);
 
