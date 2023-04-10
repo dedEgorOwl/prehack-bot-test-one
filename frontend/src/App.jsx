@@ -17,7 +17,7 @@ function App() {
 	};
 
   return (
-    <div className="App" style={{'--tg-color-scheme': 'dark'}}>
+    <div className="App" style={{'--tg-color-scheme': 'dark !important'}}>
     {cs}
 		<button onClick={onClose}>Закрыть</button>
     </div>
