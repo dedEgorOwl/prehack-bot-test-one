@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { ConfigProvider, Input } from 'antd';
+import { ConfigProvider, theme, Input } from 'antd';
 import './App.scss'
 
 
