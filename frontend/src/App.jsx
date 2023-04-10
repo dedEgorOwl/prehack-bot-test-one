@@ -11,7 +11,7 @@ function App() {
 	let prms;
 
 	useEffect(() => {
-		prms = ThemeParams();
+		prms = ThemeParams;
 		tg.ready();
 	}, []);
 
