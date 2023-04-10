@@ -18,7 +18,7 @@ function App() {
 	
   return (
     <div className="App">
-		<Input style={{outline: 'purple'}} size='large' placeholder='Company name' className='inpTest'/>
+		<Input style={{backgroundColor: 'purple'}} size='large' placeholder='Company name' className='inpTest'/>
     </div>
   )
 }
