@@ -18,7 +18,7 @@ function App() {
 	
   return (
     <div className="App">
-		<Input placeholder='Company name' />
+		<Input size='large' placeholder='Company name' />
     </div>
   )
 }
