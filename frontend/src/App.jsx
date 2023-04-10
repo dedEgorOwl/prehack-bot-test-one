@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './App.scss'
 const tg = window.Telegram.WebApp;
 
 
 
 function App() {
-	const [cs, setCs] = useState('');
 
 	useEffect(() => {
 		tg.ready();
@@ -17,9 +16,8 @@ function App() {
 	};
 
   return (
-    <div className="App" style={{'--tg-color-scheme': 'dark !important'}}>
-    {cs}
-		<button onClick={onClose}>Закрыть</button>
+    <div className="App">
+		<PopupButton></PopupButton>
     </div>
   )
 }
