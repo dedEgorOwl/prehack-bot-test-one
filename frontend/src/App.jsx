@@ -16,7 +16,7 @@ function App() {
 	
 
   return (
-	<ConfigProvider theme={{token: {colorPrimary: tg.MainButton.color,}}}>
+	<ConfigProvider theme={{token: {colorPrimary: tg.MainButton.color, lineWidthBold: 8}}}>
 		<div className="App">
 			<Input size='large' placeholder='Company name' className='inpTest'/>
 	
