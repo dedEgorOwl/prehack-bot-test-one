@@ -5,7 +5,6 @@ const tg = window.Telegram.WebApp;
 
 
 function App() {
-
 	const [cs, setCs] = useState('');
 
 	useEffect(() => {
@@ -18,7 +17,7 @@ function App() {
 	};
 
   return (
-    <div className="App">
+    <div className="App" style={{'--tg-color-scheme': 'dark'}}>
     {cs}
 		<button onClick={onClose}>Закрыть</button>
     </div>
