@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import './App.scss'
+import { MainButton } from '@vkruglikov/react-telegram-web-app';
+
 const tg = window.Telegram.WebApp;
 
 
@@ -8,16 +10,11 @@ function App() {
 
 	useEffect(() => {
 		tg.ready();
-		setCs(tg.colorScheme)
 	}, []);
-
-	const onClose = () => {
-		tg.close();
-	};
 
   return (
     <div className="App">
-		<PopupButton></PopupButton>
+		<MainButton text='Hello, huiton'></MainButton>
     </div>
   )
 }
