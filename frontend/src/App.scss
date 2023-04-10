@@ -11,9 +11,9 @@ body {
     color-scheme: var(--tg-color-scheme);
 }
 
-.Button{
-	background: var(--tg-theme-button-color);
-	color: var(--tg-theme-button-text-color);
-	border: none;
-	font-size: 18px;
+.App {
+
+	.inpTest {
+		width: 80%;
+	}
 }
