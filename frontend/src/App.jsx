@@ -3,7 +3,7 @@ import { TextField } from '@mui/material';
 import './App.scss'
 
 const tg = window.Telegram.WebApp;
-const mainColor = tg.themeParams.button_color;
+const mainColor = tg.themeParams;
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
 		tg.ready();
 	}, []);
 
-	
+	console.log(mainColor)
 
   return (
 	<div className="App">
