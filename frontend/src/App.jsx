@@ -3,8 +3,6 @@ import { Input, ConfigProvider } from 'antd';
 import './App.scss'
 
 const tg = window.Telegram.WebApp;
-const mainColor = tg.MainButton.color;
-
 
 function App() {
 
@@ -22,7 +20,7 @@ function App() {
 		<ConfigProvider
 			theme={{
 				token: {
-					colorPrimary: 'red',
+					colorPrimary: tg.MainButton.color,
 				},
 			}}
 		>
