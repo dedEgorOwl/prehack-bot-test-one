@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import './App.scss'
-import { MainButton } from '@vkruglikov/react-telegram-web-app';
+import { MainButton, BackButton } from '@vkruglikov/react-telegram-web-app';
 
 const tg = window.Telegram.WebApp;
 
@@ -14,7 +14,9 @@ function App() {
 
   return (
     <div className="App">
-		<MainButton text='Hello, huiton'></MainButton>
+		
+		<BackButton text='qwe'></BackButton>
+		<MainButton text='Оформить заказ'></MainButton>
     </div>
   )
 }
