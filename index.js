@@ -3,8 +3,6 @@ import { cmdStart } from './commands/start.command.js';
 import { cmdInfo }from './commands/info.command.js';
 import { cmdRate } from './commands/rate.command.js';
 
-
-
 bot.on('message', (msg) => {
 	console.log(msg)
 	switch(msg.text) {
