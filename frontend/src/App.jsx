@@ -29,7 +29,7 @@ function App() {
 
   return (
 	<div className="App">
-		<TextField id="outlined-search" color="tgMainThemeColor" label="Company name" type="search" />
+		<TextField id="outlined-search"  label="Company name" type="search" />
 	</div>
   )
 }
