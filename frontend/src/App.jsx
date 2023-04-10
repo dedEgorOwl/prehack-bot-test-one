@@ -16,17 +16,13 @@ function App() {
 	
 
   return (
-    <div className="App">
-		<ConfigProvider
-			theme={{
-				token: {
-					colorPrimary: tg.MainButton.color,
-				},
-			}}
-		>
-			<Input style={{outline: '1px solid purple !important'}} size='large' placeholder='Company name' className='inpTest'/>
-		</ConfigProvider>
-    </div>
+	<ConfigProvider theme={{token: {colorPrimary: tg.MainButton.color,}}}>
+		<div className="App">
+			<Input size='large' placeholder='Company name' className='inpTest'/>
+	
+		</div>
+
+	</ConfigProvider>
   )
 }
 
