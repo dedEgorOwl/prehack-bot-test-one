@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { Input, themeParams } from 'antd';
+import { Input } from 'antd';
 import './App.scss'
 
 const tg = window.Telegram.WebApp;
-
+const mainColor = tg.MainButton.color;
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
 	
   return (
     <div className="App">
-		<Input  size='large' placeholder='Company name' className='inpTest'/>
+		<Input style={{outline: 'purple'}} size='large' placeholder='Company name' className='inpTest'/>
     </div>
   )
 }
