@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import './App.scss'
-import { MainButton, ThemeParams } from '@vkruglikov/react-telegram-web-app';
 
 const tg = window.Telegram.WebApp;
 
@@ -8,19 +7,21 @@ const tg = window.Telegram.WebApp;
 
 function App() {
 
-	let prms;
+	tg.MainButton.text = "Changed Text"; //изменяем текст кнопки 
+	tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
+	tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
+	tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
 
 	useEffect(() => {
-		prms = ThemeParams;
 		tg.ready();
 	}, []);
 
 	
   return (
     <div className="App">
+
 		
 		
-		<MainButton text='Оформить заказ'></MainButton>
     </div>
   )
 }
