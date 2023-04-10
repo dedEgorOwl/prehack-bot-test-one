@@ -4,6 +4,7 @@ import { TextField } from '@mui/material';
 import './App.scss'
 
 const tg = window.Telegram.WebApp;
+const mainColor = tg.themeParams.color;
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
 
   return (
 	<div className="App">
-		<TextField id="outlined-search" label="Search field" type="search" />
+		{mainColor}
+		<TextField id="outlined-search" color={mainColor} label="Company name" type="search" />
 	</div>
   )
 }
