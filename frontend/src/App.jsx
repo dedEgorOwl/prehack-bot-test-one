@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { TextField, createTheme } from '@mui/material';
+import { ConfigProvider, Input } from 'antd';
 import './App.scss'
 
 
@@ -8,19 +8,8 @@ function App() {
 	const tg = window.Telegram.WebApp;
 	tg.MainButton.text = "Заказать";
 	tg.MainButton.show();
-	const mainColor = tg.themeParams.button_color;
-
-	
-	const { palette } = createTheme();
-	const theme = createTheme({
-		palette: {
-		  tgMainThemeColor: palette.augmentColor({
-		  color: {
-			 main: mainColor
-		  	}
-		  })
-		}
-	  });
+	const themeParams = tg.themeParams;
+	const colorScheme = tg.colorScheme;
 
 	useEffect(() => {
 		tg.ready();
@@ -28,9 +17,26 @@ function App() {
 
 
   return (
-	<div className="App">
-		<TextField id="outlined-search"  label="Company name" type="search" />
-	</div>
+	<ConfigProvider
+        theme={
+          themeParams.text_color
+            ? {
+                algorithm:
+                  colorScheme === 'dark' ? theme.darkAlgorithm : theme.defaultAlgorithm,
+                token: {
+                  colorText: themeParams.text_color,
+                  colorPrimary: themeParams.button_color,
+                  colorBgBase: themeParams.bg_color,
+                },
+              }
+            : undefined
+        }
+      >
+		<div className="App">
+		<Input size="large" placeholder="large size" />
+		</div>
+	  </ConfigProvider>
+	
   )
 }
 
