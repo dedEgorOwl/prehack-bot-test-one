@@ -1,10 +1,8 @@
-import { useEffect } from 'react';
-import { Input, ConfigProvider, theme } from 'antd';
+import Box from '@mui/material/Box';
+import { TextField } from '@mui/material';
 import './App.scss'
 
 const tg = window.Telegram.WebApp;
-const themeParams = tg.themeParams;
-const colorScheme = tg.colorScheme;
 
 function App() {
 
@@ -18,27 +16,9 @@ function App() {
 	
 
   return (
-	<ConfigProvider theme={
-		themeParams.text_color
-		  ? {
-			  algorithm:
-				colorScheme === 'dark'
-				  ? theme.darkAlgorithm
-				  : theme.defaultAlgorithm,
-			  token: {
-				colorText: themeParams.text_color,
-				colorPrimary: themeParams.button_color,
-				colorBgBase: themeParams.bg_color
-			  },
-			}
-		  : undefined
-	  }>
-		<div className="App">
-			<Input size='large' placeholder='Company name' className='inpTest'/>
-	
-		</div>
-
-	</ConfigProvider>
+	<div className="App">
+		<TextField required id="outlined-required" label="Required" defaultValue="Hello World"/>
+	</div>
   )
 }
 
