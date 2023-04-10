@@ -8,8 +8,8 @@ const tg = window.Telegram.WebApp;
 function App() {
 
 	tg.MainButton.text = "Заказать";
-	tg.MainButton.textColor = "#F55353";
-	tg.MainButton.color = "#143F6B";
+	tg.MainButton.textColor = --tg-theme-button-text-color;
+	tg.MainButton.color = --tg-theme-button-color;
 	tg.MainButton.show();
 
 	useEffect(() => {
