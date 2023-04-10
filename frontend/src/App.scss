@@ -21,5 +21,10 @@ body {
 
 	.inpTest {
 		width: 80%;
+
+		&hover {
+			outline: 1px solid purple;
+			border: 1px solid purple;
+		}
 	}
 }
